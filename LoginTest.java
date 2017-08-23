@@ -13,7 +13,7 @@ import org.junit.After;
 public class LoginTest {
 	public WebDriver driver;
 	public LoginPage instanceLoginPage;
-	public String baseUrl = "https://saasframework.net/Account/Login?ReturnUrl=%2Fgha";
+	public String baseUrl = "";
 	
 	@Before
 	public void setUp() {
@@ -25,8 +25,8 @@ public class LoginTest {
 	
 	@Test
 	public void login() {
-		instanceLoginPage.setEmail("sf1@mailinator.com");
-		instanceLoginPage.setPassword("123123");
+		instanceLoginPage.setEmail("");
+		instanceLoginPage.setPassword("");
 		instanceLoginPage.pressSubmitButton();
 	}
 	
